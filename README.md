@@ -1,2 +1,3 @@
-# kb
-Knowledge Base
+# Table of Contents
+
+[Test Article](/test/test.md)
