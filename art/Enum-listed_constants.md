@@ -1,4 +1,4 @@
-<meta video="https://youtu.be/1hnbPurqGdA">
+<meta video="1hnbPurqGdA">
 
 # Enum - listed constants
 
