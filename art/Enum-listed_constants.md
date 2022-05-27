@@ -1,5 +1,4 @@
 <meta video="https://youtu.be/1hnbPurqGdA">
-<div />
 
 # Enum - listed constants
 
