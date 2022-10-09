@@ -9,7 +9,7 @@
         </td>
         <td>
             
-``` java
+```java
     List<String> collected = Stream.of("a", "b", "c")
         .collect(Collectors.toList());
 ``` 
