@@ -18,13 +18,10 @@
             collect(toList())
         </td>
         <td>
-
-```java
-    List<String> collected = Stream.of("a", "b", "c")
-        .collect(Collectors.toList());
-``` 
-\
-
+            <code class="java">
+                List<String> collected = Stream.of("a", "b", "c")
+                    .collect(Collectors.toList());
+            </code>
         </td>
         <td>
             Порождает коллекцию из стрима
