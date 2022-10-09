@@ -1,12 +1,12 @@
 # Stream API cheet sheet
 
 ## Basic operations
-
+\n
 ```java
     List<String> collected = Stream.of("a", "b", "c")
         .collect(Collectors.toList());
 ```
-
+\n
 <table>
     <tr>
         <td>
