@@ -8,7 +8,6 @@
     List<String> collected = Stream.of("a", "b", "c")
         .collect(Collectors.toList());
 ```
-\
 
 </div>
 
