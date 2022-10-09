@@ -2,18 +2,23 @@
 
 ## Basic operations
 
+```java
+    List<String> collected = Stream.of("a", "b", "c")
+        .collect(Collectors.toList());
+```
+
 <table>
     <tr>
         <td>
             collect(toList())
         </td>
         <td>
-
+\n
             ```java
                 List<String> collected = Stream.of("a", "b", "c")
                     .collect(Collectors.toList());
             ```
-
+\n
         </td>
         <td>
             Порождает коллекцию из стрима
