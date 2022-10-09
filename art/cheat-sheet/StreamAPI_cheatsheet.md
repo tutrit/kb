@@ -1,24 +1,19 @@
 # Stream API cheet sheet
 
 ## Basic operations
-\n
-```java
-    List<String> collected = Stream.of("a", "b", "c")
-        .collect(Collectors.toList());
-```
-\n
+
 <table>
     <tr>
         <td>
             collect(toList())
         </td>
         <td>
-\n
-            ```java
-                List<String> collected = Stream.of("a", "b", "c")
-                    .collect(Collectors.toList());
-            ```
-\n
+            
+            ``` java
+            List<String> collected = Stream.of("a", "b", "c")
+                .collect(Collectors.toList());
+            ``` 
+\
         </td>
         <td>
             Порождает коллекцию из стрима
