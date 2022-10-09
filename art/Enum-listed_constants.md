@@ -6,3 +6,6 @@
 - Constructors and additional values
 - Custom methods
 - EnumMap, EnumSet
+
+
+My advice:
