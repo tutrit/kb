@@ -67,8 +67,10 @@ max min
 </td><td>
 
 ``` java
-List<Person> persons = asList(new Person("Max", 52), new Person("Vlad for Your Furs", 37), new Person("Don", 45));
-
+List<Person> persons = asList(
+                    new Person("Max", 52), 
+                    new Person("Vlad for Your Furs", 37), 
+                    new Person("Don", 45));
 persons.stream()
 .min(Comparator.comparing(p -> p.getAge()))
 .get();
@@ -88,13 +90,14 @@ int result = numbers.stream()
 
 0 - Identity(subtotal, element) -> subtotal + element - accumulator
 
-List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6); int result = numbers.parallelStream()
-.reduce(0, (subtotal, element) -> subtotal + element, Integer::sum);
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6); 
+int result = numbers.parallelStream()
+    .reduce(0, (subtotal, element) -> subtotal + element, Integer::sum);
 
 Integer::sum - combiner
 
-if we use sequential streams and the types of the accumulator arguments and the types of its implementation match, we
-don't need to use a combiner.
+if we use sequential streams and the types of the accumulator arguments and the types of its implementation match, 
+we don't need to use a combiner.
 ```
 </td><td>
 reduction stream operations allow us to produce one single result from a sequence of elements, by applying repeatedly a
@@ -126,15 +129,21 @@ min , max , average и sum
 
 ``` java
 IntSummaryStatistics statistics = Arrays.asList(
-new Person("vlad", 23), new Person("max", 32), new Person("dima", 12), new Person("bob", 54))
-.stream()
-.mapToInt(p -> p.getAge())
-.summaryStatistics();Stream.parralel()
+        new Person("vlad", 23), 
+        new Person("max", 32), 
+        new Person("dima", 12), 
+        new Person("bob", 54))
+    .stream()
+    .mapToInt(p -> p.getAge())
+    .summaryStatistics();Stream.parralel()
 
 Collection.parralelStream()
 
-System.out.printf("Max: %d, Min: %d, Ave: %f, Sum: %d", statistics.getMax(), statistics.getMin(),
-statistics.getAverage(), statistics.getSum());
+System.out.printf("Max: %d, Min: %d, Ave: %f, Sum: %d", 
+    statistics.getMax(),
+    statistics.getMin(),
+    statistics.getAverage(), 
+    statistics.getSum());
 ```
-</td><td></td></tr>
+</td><td>blank</td></tr>
 </table>
