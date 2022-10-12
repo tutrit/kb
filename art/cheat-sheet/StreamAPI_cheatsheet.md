@@ -1,3 +1,5 @@
+<meta fullwidth='true'>
+
 # Stream API cheat sheet
 
 ## Basic operations
@@ -5,10 +7,7 @@
 
 <table>
 <tr><td>
-
-``` java
-collect(toList())
-```
+    collect(toList())
 </td><td>
 
 ``` java
@@ -18,10 +17,7 @@ collect(toList())
 </td><td>
 Порождает коллекцию из стрима
 </td></tr><tr><td>
-
-``` java
 map
-```
 </td><td>
 
 ``` java
@@ -32,10 +28,7 @@ List<String> collected = Stream.of("a", "b", "c")
 </td><td>
 применяет функцию, которая преобразует значение одного типа в другой, и возвращает стрим нового типа
 </td></tr><tr><td>
-
-``` java
 filter
-```
 </td><td>
 
 ``` java
@@ -46,10 +39,7 @@ List<String> collected = Stream.of("a", "b", "c")
 </td><td>
 применяет функцию, которая проверяет соответствие значения заданному, и возвращает стрим соответствующих значений
 </td></tr><tr><td>
-
-``` java
 flatMap
-```
 </td><td>
 
 ``` java
@@ -60,10 +50,7 @@ List<Integer> together = Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4))
 </td><td>
 позволяет заменить значение объектом Stream и соединить все стримы (стрим стримов)
 </td></tr><tr><td>
-
-``` java
 max min
-```
 </td><td>
 
 ``` java
@@ -78,10 +65,7 @@ persons.stream()
 </td><td>
 нахождение максимума или минимума
 </td></tr><tr><td>
-
-``` java
 reduce
-```
 </td><td>
 
 ``` java
@@ -116,15 +100,10 @@ implementation
 
 Если начальное значение опущено, то при первом обращении к редуктору используются первые два элемента потока. Это
 полезно, когда для операции reduce не существует разумного начального значения и возвращается экземпляр типа Optional .
-</td></tr><tr><td>
-
-``` java
+</td></tr><tr><td class="text-nowrap">
 .summaryStatistics()
-
 IntSummaryStatistics
-
 min , max , average и sum
-```
 </td><td>
 
 ``` java
