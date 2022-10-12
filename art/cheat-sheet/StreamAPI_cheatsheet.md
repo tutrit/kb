@@ -1,58 +1,38 @@
-<meta fullwidth='true'>
 
 # Stream API cheat sheet
 
 ## Basic operations
 
-
-<table>
-<tr><td>
-    collect(toList())
-</td><td>
-
+#### collect(toList())
+Порождает коллекцию из стрима
 ``` java
     List<String> collected = Stream.of("a", "b", "c")
         .collect(Collectors.toList());
 ``` 
-</td><td>
-Порождает коллекцию из стрима
-</td></tr><tr><td>
-map
-</td><td>
 
+#### map
+применяет функцию, которая преобразует значение одного типа в другой, и возвращает стрим нового типа
 ``` java
 List<String> collected = Stream.of("a", "b", "c")
 .map(string -> string.toUpperCase())
 .collect(Collectors.toList());
 ```
-</td><td>
-применяет функцию, которая преобразует значение одного типа в другой, и возвращает стрим нового типа
-</td></tr><tr><td>
-filter
-</td><td>
-
+#### filter
+применяет функцию, которая проверяет соответствие значения заданному, и возвращает стрим соответствующих значений
 ``` java
 List<String> collected = Stream.of("a", "b", "c")
 .filter(string -> string.equals("a"))
 .collect(Collectors.toList());
 ```
-</td><td>
-применяет функцию, которая проверяет соответствие значения заданному, и возвращает стрим соответствующих значений
-</td></tr><tr><td>
-flatMap
-</td><td>
-
+#### flatMap
+позволяет заменить значение объектом Stream и соединить все стримы (стрим стримов)
 ``` java
 List<Integer> together = Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4))
 .flatMap(numbers -> numbers.stream())
 .collect(toList());
 ```
-</td><td>
-позволяет заменить значение объектом Stream и соединить все стримы (стрим стримов)
-</td></tr><tr><td>
-max min
-</td><td>
-
+#### max min
+нахождение максимума или минимума
 ``` java
 List<Person> persons = asList(
                     new Person("Max", 52), 
@@ -62,12 +42,7 @@ persons.stream()
 .min(Comparator.comparing(p -> p.getAge()))
 .get();
 ```
-</td><td>
-нахождение максимума или минимума
-</td></tr><tr><td>
-reduce
-</td><td>
-
+#### reduce
 ``` java
 int result = numbers.stream()
 .reduce(0, (subtotal, element) -> subtotal + element);
@@ -80,10 +55,9 @@ int result = numbers.parallelStream()
 
 Integer::sum - combiner
 ```
-if we use sequential streams and the types of the accumulator arguments and the types of its implementation match, 
+if we use sequential streams and the types of the accumulator arguments and the types of its implementation match,
 we don't need to use a combiner.
-
-</td><td>
+<br />
 reduction stream operations allow us to produce one single result from a sequence of elements, by applying repeatedly a
 combining operation to the elements in the sequence.
 
@@ -100,12 +74,9 @@ implementation
 
 Если начальное значение опущено, то при первом обращении к редуктору используются первые два элемента потока. Это
 полезно, когда для операции reduce не существует разумного начального значения и возвращается экземпляр типа Optional .
-</td></tr><tr><td class="text-nowrap">
-.summaryStatistics() <br />
-IntSummaryStatistics <br />
-min , max , average и sum <br />
-</td><td>
-
+#### .summaryStatistics() 
+#### IntSummaryStatistics 
+#### min , max , average и sum
 ``` java
 IntSummaryStatistics statistics = Arrays.asList(
         new Person("vlad", 23), 
@@ -124,5 +95,3 @@ System.out.printf("Max: %d, Min: %d, Ave: %f, Sum: %d",
     statistics.getAverage(), 
     statistics.getSum());
 ```
-</td><td>blank</td></tr>
-</table>
