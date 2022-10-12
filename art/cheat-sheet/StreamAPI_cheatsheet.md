@@ -95,10 +95,10 @@ int result = numbers.parallelStream()
     .reduce(0, (subtotal, element) -> subtotal + element, Integer::sum);
 
 Integer::sum - combiner
-
+```
 if we use sequential streams and the types of the accumulator arguments and the types of its implementation match, 
 we don't need to use a combiner.
-```
+
 </td><td>
 reduction stream operations allow us to produce one single result from a sequence of elements, by applying repeatedly a
 combining operation to the elements in the sequence.
