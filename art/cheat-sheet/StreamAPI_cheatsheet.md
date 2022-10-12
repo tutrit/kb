@@ -9,7 +9,7 @@
     List<String> collected = Stream.of("a", "b", "c")
         .collect(Collectors.toList());
 ``` 
-<hr />
+<hr>
 #### map()
 применяет функцию, которая преобразует значение одного типа в другой, и возвращает стрим нового типа
 ``` java
@@ -17,7 +17,7 @@ List<String> collected = Stream.of("a", "b", "c")
 .map(string -> string.toUpperCase())
 .collect(Collectors.toList());
 ```
-<hr />
+<hr>
 #### filter()
 применяет функцию, которая проверяет соответствие значения заданному, и возвращает стрим соответствующих значений
 ``` java
@@ -25,7 +25,7 @@ List<String> collected = Stream.of("a", "b", "c")
 .filter(string -> string.equals("a"))
 .collect(Collectors.toList());
 ```
-<hr />
+<hr>
 #### flatMap()
 позволяет заменить значение объектом Stream и соединить все стримы (стрим стримов)
 ``` java
@@ -33,7 +33,7 @@ List<Integer> together = Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4))
 .flatMap(numbers -> numbers.stream())
 .collect(toList());
 ```
-<hr />
+<hr>
 #### max() min()
 нахождение максимума или минимума
 ``` java
@@ -45,7 +45,7 @@ persons.stream()
 .min(Comparator.comparing(p -> p.getAge()))
 .get();
 ```
-<hr />
+<hr>
 #### reduce()
 ``` java
 int result = numbers.stream()
@@ -78,7 +78,7 @@ implementation
 
 Если начальное значение опущено, то при первом обращении к редуктору используются первые два элемента потока. Это
 полезно, когда для операции reduce не существует разумного начального значения и возвращается экземпляр типа Optional .
-<hr />
+<hr>
 #### .summaryStatistics() 
 #### IntSummaryStatistics 
 #### min() , max() , average() и sum()
@@ -100,4 +100,4 @@ System.out.printf("Max: %d, Min: %d, Ave: %f, Sum: %d",
     statistics.getAverage(), 
     statistics.getSum());
 ```
-<hr />
+<hr>
