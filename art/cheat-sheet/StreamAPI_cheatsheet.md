@@ -15,8 +15,8 @@
 применяет функцию, которая преобразует значение одного типа в другой, и возвращает стрим нового типа
 ``` java
 List<String> collected = Stream.of("a", "b", "c")
-.map(string -> string.toUpperCase())
-.collect(Collectors.toList());
+    .map(string -> string.toUpperCase())
+    .collect(Collectors.toList());
 ```
 ---
 
@@ -24,8 +24,8 @@ List<String> collected = Stream.of("a", "b", "c")
 применяет функцию, которая проверяет соответствие значения заданному, и возвращает стрим соответствующих значений
 ``` java
 List<String> collected = Stream.of("a", "b", "c")
-.filter(string -> string.equals("a"))
-.collect(Collectors.toList());
+    .filter(string -> string.equals("a"))
+    .collect(Collectors.toList());
 ```
 ---
 
@@ -46,15 +46,15 @@ List<Person> persons = asList(
                     new Person("Vlad for Your Furs", 37), 
                     new Person("Don", 45));
 persons.stream()
-.min(Comparator.comparing(p -> p.getAge()))
-.get();
+    .min(Comparator.comparing(p -> p.getAge()))
+    .get();
 ```
 ---
 
 #### reduce()
 ``` java
 int result = numbers.stream()
-.reduce(0, (subtotal, element) -> subtotal + element);
+    .reduce(0, (subtotal, element) -> subtotal + element);
 
 0 - Identity(subtotal, element) -> subtotal + element - accumulator
 
@@ -96,7 +96,9 @@ IntSummaryStatistics statistics = Arrays.asList(
         new Person("bob", 54))
     .stream()
     .mapToInt(p -> p.getAge())
-    .summaryStatistics();Stream.parralel()
+    .summaryStatistics();
+
+Stream.parralel()
 
 Collection.parralelStream()
 
@@ -107,4 +109,3 @@ System.out.printf("Max: %d, Min: %d, Ave: %f, Sum: %d",
     statistics.getSum());
 ```
 ---
-
