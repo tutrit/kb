@@ -42,7 +42,7 @@ Among them are Functional interfaces, Lambda Expressions and Stream API, that co
 
 ## [2019] Since JDK 8u221 Java is under OTN license
 Back in 2018 Oracle decided to stop distributing the Oracle JDK for free and start charging companies for commercial licenses. 
-ONT is an Oracle Technology Network License Agreement for Oracle Java SE. 
+OTN is an Oracle Technology Network License Agreement for Oracle Java SE. 
 It means, you may not use Oracle JDK for any data processing or any commercial, production, or internal business purposes other than 
 developing, testing, prototyping, and demonstrating your Application.
 Organizations that wanted to continue using a free version of the JDK were encouraged to adopt OpenJDK.
