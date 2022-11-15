@@ -1,4 +1,4 @@
-![tag](https://img.shields.io/badge/article-instagram-red.svg)
+![tag](https://img.shields.io/badge/article-Instagram-red.svg)
 # Key dates in Java history
 ![](./Key_Dates_In_Java_History/01.png)
 Intro text
