@@ -1,4 +1,3 @@
-
 ![tag](https://img.shields.io/badge/article-CheatSheet-red.svg)
 # Stream API cheat sheet
 
