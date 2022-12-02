@@ -38,6 +38,7 @@ The Demo Application could be used as a validator of enabling/disabling preview 
 
 # Enable Preview Feature in Java Compiler 
 ![](./Java_Preview_Features/3.png)
+<div component="text-block">
 Preview features enables by passing 2 arguments to compiler: _enable-preview_ and _source_ or _release_.
 
 In order to compile and run java code with preview features, the source/release argument must be the same for JDK release version of 
@@ -58,16 +59,20 @@ And then run with JVM without second argument:
 ```bash
 java --enable-preview com.tutrit.demo.EnablePreviewFeatureDemo
 ```
+</div>
 
 # Enable Preview Feature in IntelliJ IDEA
 ![](./Java_Preview_Features/4.png)
+<div component="text-block">
 The Demo Application won't compile in IntelliJ by default with a message that _Patterns in switch are not supported at language level '17'_
 and recommendation to _Set language level to 17 (Preview) - Pattern matching for switch. 
 It could be done from _File -> Project Structure -> Project -> Project language level_
 > The error won't go if build tool such as Gradle or Maven is used!
+</div>
 
 # Enable Preview Feature with Maven in pom.xml
 ![](./Java_Preview_Features/5.png)
+<div component="text-block">
 In order to enable Preview Feature with Maven, _Maven Compiler Plugin_ should be included in build script file _pom.xml_.
 It is used to provide language version and compiler arguments. Here is the configuration:
 ```xml
@@ -95,9 +100,11 @@ alongside with _enable-preview_ argument a class path should be specified in the
 ```bash
 java --enable-preview -cp demo-0.0.1-SNAPSHOT.jar com.tutrit.demo.EnablePreviewFeatureDemo
 ```
+</div>
 
 # Enable Preview Feature with Gradle in gradle.build
 ![](./Java_Preview_Features/6.png)
+<div component="text-block">
 In order to enable Preview Feature with Gradle, 3 tasks should be included in build script file _gradle.build_ to provide 
 arguments to compiler and JVM:
 ```groovy
@@ -118,3 +125,4 @@ alongside with _enable-preview_ argument a class path should be specified in the
 ```bash
 java --enable-preview -cp demo-0.0.1-SNAPSHOT.jar com.tutrit.demo.EnablePreviewFeatureDemo
 ```
+</div>
