@@ -30,10 +30,12 @@ public class EnablePreviewFeatureDemo {
     }
 }
 ```
-In demo purpose, the class above listed will be placed in a project with the following structure:
-> /demo-enable-preview-features/src/main/java/com/tutrit/demo/EnablePreviewFeatureDemo.java
 
-The Demo Application could be used as a validator of enabling/disabling preview feature. It could be found at: https://github.com/tutrit/demo-enable-preview-features. 
+In demo purpose, the class above listed will be placed in a project with the following structure:
+`/demo-enable-preview-features/src/main/java/com/tutrit/demo/EnablePreviewFeatureDemo.java`
+
+The Demo Application could be used as a validator of enabling/disabling preview feature. It could be found at: 
+<a href='https://github.com/tutrit/demo-enable-preview-features'>https://github.com/tutrit/demo-enable-preview-features </a>. 
 </div>
 
 # Enable Preview Feature in Java Compiler 
@@ -57,6 +59,7 @@ Another way is to compile it first with _source_ or _release_ flag:
 javac --enable-preview --source 17 com/tutrit/demo/EnablePreviewFeatureDemo.java
 javac --enable-preview --relese 17 com/tutrit/demo/EnablePreviewFeatureDemo.java
 ```
+
 And then run with JVM without second argument:
 
 ```bash
@@ -71,7 +74,9 @@ java --enable-preview com.tutrit.demo.EnablePreviewFeatureDemo
 The Demo Application won't compile in IntelliJ by default with a message that _Patterns in switch are not supported at language level '17'_
 and recommendation to _Set language level to 17 (Preview) - Pattern matching for switch. 
 It could be done from _File -> Project Structure -> Project -> Project language level_
+
 > The error won't go if build tool such as Gradle or Maven is used!
+
 </div>
 
 # Enable Preview Feature with Maven in pom.xml
@@ -79,6 +84,7 @@ It could be done from _File -> Project Structure -> Project -> Project language 
 <div component="text-block">
 In order to enable Preview Feature with Maven, _Maven Compiler Plugin_ should be included in build script file _pom.xml_.
 It is used to provide language version and compiler arguments. Here is the configuration:
+
 ```xml
     <build>
         <plugins>
@@ -97,6 +103,7 @@ It is used to provide language version and compiler arguments. Here is the confi
         </plugins>
     </build>
 ```
+
 > The Demo Application doesn't use MANIFEST!
 
 Because the Demo Application doesn't specify main class due to make it as small as possible, to run it after regular packaging with `mvn package`, 
@@ -105,6 +112,7 @@ alongside with _enable-preview_ argument a class path should be specified in the
 ```bash
 java --enable-preview -cp demo-0.0.1-SNAPSHOT.jar com.tutrit.demo.EnablePreviewFeatureDemo
 ```
+
 </div>
 
 # Enable Preview Feature with Gradle in gradle.build
@@ -124,11 +132,14 @@ tasks.withType(JavaExec) {
 	jvmArgs += "--enable-preview"
 }
 ```
+
 > The Demo Application doesn't use MANIFEST!
 
 Because the Demo Application doesn't specify main class due to make it as small as possible, to run it after regular packaging with `gradle jar`,
 alongside with _enable-preview_ argument a class path should be specified in the run command:
+
 ```bash
 java --enable-preview -cp demo-0.0.1-SNAPSHOT.jar com.tutrit.demo.EnablePreviewFeatureDemo
 ```
+
 </div>
