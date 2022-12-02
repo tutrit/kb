@@ -46,19 +46,23 @@ the compiler and JVM version.
 
 Since the Demo Application is just one java class, it could be run from `demo-enable-preview-features/src/main/java` 
 directory with the following command:
+
 ```bash
 java --enable-preview --source 17 com/tutrit/demo/EnablePreviewFeatureDemo.java
 ```
 
 Another way is to compile it first with _source_ or _release_ flag:
+
 ```bash
 javac --enable-preview --source 17 com/tutrit/demo/EnablePreviewFeatureDemo.java
 javac --enable-preview --relese 17 com/tutrit/demo/EnablePreviewFeatureDemo.java
 ```
 And then run with JVM without second argument:
+
 ```bash
 java --enable-preview com.tutrit.demo.EnablePreviewFeatureDemo
 ```
+
 </div>
 
 # Enable Preview Feature in IntelliJ IDEA
@@ -97,6 +101,7 @@ It is used to provide language version and compiler arguments. Here is the confi
 
 Because the Demo Application doesn't specify main class due to make it as small as possible, to run it after regular packaging with `mvn package`, 
 alongside with _enable-preview_ argument a class path should be specified in the run command:
+
 ```bash
 java --enable-preview -cp demo-0.0.1-SNAPSHOT.jar com.tutrit.demo.EnablePreviewFeatureDemo
 ```
@@ -107,6 +112,7 @@ java --enable-preview -cp demo-0.0.1-SNAPSHOT.jar com.tutrit.demo.EnablePreviewF
 <div component="text-block">
 In order to enable Preview Feature with Gradle, 3 tasks should be included in build script file _gradle.build_ to provide 
 arguments to compiler and JVM:
+
 ```groovy
 tasks.withType(JavaCompile) {
 	options.compilerArgs += "--enable-preview"
