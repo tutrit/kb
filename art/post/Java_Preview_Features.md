@@ -74,7 +74,7 @@ java --enable-preview com.tutrit.demo.EnablePreviewFeatureDemo
 <div component="text-block">
 
 The Demo Application won't compile in IntelliJ by default with a message that _Patterns in switch are not supported at language level '17'_
-and recommendation to _Set language level to 17 (Preview) - Pattern matching for switch. 
+and recommendation to _Set language level to 17 (Preview) - Pattern matching for switch_. 
 It could be done from _File -> Project Structure -> Project -> Project language level_
 
 > The error won't go if build tool such as Gradle or Maven is used!
