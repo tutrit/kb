@@ -22,7 +22,7 @@ At that time Sun sold computers, computer components, software, and information 
 ## [1984] James Gosling join Sun Microsystems
 ![](./Key_Dates_In_Java_History/03.png)
 <div component="text-block">
-In October of 1984, at the age of 29 years a Canadian computer scientist James Arthur Gosling Gosling started working for Sun Microsystems.  
+In October 1984, at the age of 29 years a Canadian computer scientist James Arthur Gosling Gosling started working for Sun Microsystems.  
 
 Before that, He had written a version of Emacs called Gosling Emacs (Gosmacs), built a multi-processor version of Unix for a 16-way computer system, and developed several compilers and mail systems.
 </div>
@@ -90,7 +90,7 @@ Among them are Functional interfaces, Lambda Expressions and Stream API, that co
 <div component="text-block">
 Back in 2018 Oracle decided to stop distributing the Oracle JDK for free and start charging companies for commercial licenses. 
 
-ONT is an Oracle Technology Network License Agreement for Oracle Java SE.  
+OTN is an Oracle Technology Network License Agreement for Oracle Java SE.  
 
 It means, you may not use Oracle JDK for any data processing or any commercial, production, or internal business purposes other than developing, testing, prototyping, and demonstrating your Application.  
 
