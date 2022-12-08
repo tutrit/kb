@@ -18,7 +18,7 @@ Such module, API or tool should be identified by the `jdk.incubator` prefix (for
 ![](./Java_Incubator_Modules/2.png)
 <div component="text-block">
 
-With Java 17 release become available _"JEP 414: Vector API (Second Incubator)"_, so for demo purpose we just import
+With Java 17 release becomes available _"JEP 414: Vector API (Second Incubator)"_, so for demo purpose we just import
 FloatVector class from incubator module:
 
 ```java
@@ -41,7 +41,7 @@ The Demo Application could be used as a validator of enabling/disabling incubato
 ![](./Java_Incubator_Modules/3.png)
 <div component="text-block">
 
-Preview features enables by passing _add-modules_ arguments to compiler following with the name of the module.
+Preview features enables by passing _add-modules_ argument to compiler following with the name of the module.
 
 Since the Demo Application is just one java class, it could be run from `demo-enable-incubator-features/src/main/java` 
 directory with the following command:
@@ -108,7 +108,7 @@ It is used to provide language version and compiler arguments. Here is the confi
 ```
 
 If in IntelliJ you are still getting an error, 
-add `--add-modules jdk.incubator.vector`as _VM Options_ at _Run/Debug configuration_.
+add `--add-modules jdk.incubator.vector` as _VM Options_ at _Run/Debug configuration_.
 
 > The Demo Application doesn't use MANIFEST!
 
@@ -144,11 +144,11 @@ tasks.withType(JavaExec) {
 ```
 
 If in IntelliJ you are still getting an error,
-add `--add-modules jdk.incubator.vector`as _VM Options_ at _Run/Debug configuration_.
+add `--add-modules jdk.incubator.vector` as _VM Options_ at _Run/Debug configuration_.
 
 > The Demo Application doesn't use MANIFEST!
 
-Because the Demo Application doesn't specify main class due to make it as small as possible, to run it after regular packaging with `mvn package`,
+Because the Demo Application doesn't specify main class due to make it as small as possible, to run it after regular packaging with `gradle jar`,
 alongside with _--add-modules_ argument a class path should be specified in the run command:
 
 ```bash
