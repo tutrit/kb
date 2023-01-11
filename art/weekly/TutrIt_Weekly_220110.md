@@ -11,7 +11,7 @@ apache-tomcat-upgrade-10_1_2 apache-tomcat-upgrade-8_5_84 apache-tomcat-upgrade-
 ![tag](https://img.shields.io/badge/Vulnerability-1min-blueviolet.svg?labelColor=red)
 
 ## [Kubernetes, Your Next Java App Server • Burr Sutter • GOTO 2022](https://www.youtube.com/watch?v=pwxAZWqt4I8)
-n the Java ecosystem, we have historically been enamored by the concept of the “Application Server",
+In the Java ecosystem, we have historically been enamored by the concept of the “Application Server",
 the runtime engine that not only gave us portable APIs (e.g. JMS, JAX-RS, JSF, EJB) but also gave us critical runtime
 infrastructure for things like farm deployments, configuration, load-balancing, fail-over, distributed management and monitoring.
 
@@ -64,8 +64,8 @@ as well as porting the JDK to the Linux/RISC-V instruction set:
 ![tag](https://img.shields.io/badge/article-18min-blueviolet.svg)
 
 ## [Nothing is better than the Optional type. Really. Nothing is better.](https://blogs.oracle.com/javamagazine/post/optional-class-null-pointer-drawbacks)
-Best practices on using Optional class from Michael Ernst, professor of computer science and engineering at the University of Washington in Seattle, Washington.
-The misunderstanding of using the real problem Optional built to solve just creates new problems, clutters code and adds leads to space, time, and coding overhead. 
+Best practices on using Optional class from Michael Ernst, professor of computer science and engineering at the University of Washington in Seattle, Washington.  
+The misunderstanding of using the real problem Optional built to solve just creates new problems, clutters code and adds leads to space, time, and coding overhead.  
 The article gives an idea which is a better way for null checking and how use Optional without causing new troubles.  
 ![tag](https://img.shields.io/badge/JDK-8-blue.svg) ![tag](https://img.shields.io/badge/artilce-10min-blueviolet.svg)
 
@@ -83,4 +83,3 @@ libraries and process native data without the brittleness and danger of JNI.
 This work has been done in the scope of [Panama project](https://openjdk.org/projects/panama/).  
 The mail will give you the latest updates on Panama project and future development direction regarding feedbacks gathered.  
 ![tag](https://img.shields.io/badge/JDK-20-blue.svg) ![tag](https://img.shields.io/badge/mail-5min-blueviolet.svg)  
-
