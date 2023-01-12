@@ -1,3 +1,4 @@
+![tag](https://img.shields.io/badge/article-CheatSheet-red.svg)
 # TutrIt Weekly 220110
 
 ## [Apache Tomcat: Low: Apache Tomcat JsonErrorReportValve injection (CVE-2022-45143)](https://www.rapid7.com/db/vulnerabilities/apache-tomcat-cve-2022-45143/)
